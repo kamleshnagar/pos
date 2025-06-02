@@ -531,12 +531,12 @@
     /* min-height: 500px; */
     
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .summary-content {
         width: 100%;
         padding: 20px;
     }
-}
+} */
 
 /* Discount section */
 .summary-content label {
