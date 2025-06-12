@@ -182,6 +182,7 @@
         width: 90%;
         flex-wrap: wrap;
         margin: auto;
+        gap: 0px;
     }
 }
 
