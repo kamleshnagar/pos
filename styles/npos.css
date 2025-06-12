@@ -506,11 +506,7 @@ select.form-control {
 }
 
 /* Input Sections */
-.input-section {
-    padding: 1.25rem;
-    background-color: white;
-    border-bottom: 1px solid var(--border-color);
-}
+
 
 /* Hamburger Menu */
 .hamburger-menu {
@@ -798,12 +794,7 @@ h1 {
 }
 
 /* Input Sections */
-.input-section {
-    padding: 1.25rem;
-    background-color: white;
-    border-bottom: 1px solid var(--border-color);
-    position: relative;
-}
+
 
 .input-row {
     display: flex;
