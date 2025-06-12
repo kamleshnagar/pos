@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/sales.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+<script src="js/barcode.js"></script>
+
 
 <body class="sales">
     <!-- Hamburger Menu Button -->
@@ -164,7 +167,8 @@
         <div class="input-section">
             <div class="input-row">
                 <div class="input-group">
-                    <input type="text" class="form-input" placeholder="Cust Mob No">
+                    <input id="inputnum"  type="text" class="form-input" placeholder="Cust Mob No">
+
                     <button class="search-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -172,10 +176,13 @@
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
                     </button>
+                    
                 </div>
+                <p id="invalidnum" class="empty"></p>
                 <div class="input-group">
                     <input type="text" class="form-input" placeholder="Cust Name">
                 </div>
+                 <p class="empty"></p>
             </div>
             <div class="input-row">
                 <div class="input-group selection-box">
@@ -186,18 +193,27 @@
                         <option value="haresh_vishwakarma">HARESH VISHWAKARMA</option>
                     </select>
                 </div>
+                
+                <p class="empty"></p>
+                
                 <div class="input-group">
-                    <input type="text" class="form-input" placeholder="Item Barcode scan">
-                    <button class="search-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg>
-                    </button>
+                    <input id="inputbarcode" type="text" class="form-input" placeholder="Item Barcode scan">
+                    <div class="barcodebutton">
+                        <button class="search-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
 
+                <p id="invalidbarcode" class="empty"></p>
+
             </div>
+
             <div class="button-row">
                 <div class="action-buttons">
                     <button class="btn btn-primary">PRODUCTS</button>
@@ -208,6 +224,8 @@
                     <button class="btn btn-outline">BILL ON HOLD</button>
                 </div>
             </div>
+
+
         </div>
 
         <!-- Main Content Area -->
