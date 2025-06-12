@@ -581,8 +581,10 @@ select.form-control {
         width: 100%;
         justify-content: space-between;
     }
-
-
+        .input-section {
+        padding: 1rem;
+        
+    }
 
     .input-row {
         flex-direction: column;
